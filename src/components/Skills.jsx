@@ -2,6 +2,7 @@ import React from "react";
 
 // import js from "./images/js.svg";
 import {
+  bitcoin,
   html,
   css,
   js,
@@ -33,9 +34,9 @@ SwiperCore.use([EffectCards]);
 const Skills = ({ scrl }) => {
   return (
     <>
-      <Heading title="Skills" scrl={scrl} />
+      <Heading title="Road Map" scrl={scrl} />
       <div className="flex justify-around items-center flex-wrap overflow-x-hidden">
-        <div className="w-[310px] h-[400px] my-7 mx-2">
+        {/* <div className="w-[310px] h-[400px] my-7 mx-2">
           <Swiper
             effect={"cards"}
             grabCursor={true}
@@ -148,6 +149,83 @@ const Skills = ({ scrl }) => {
               />
             </SwiperSlide>
           </Swiper>
+        </div> */}
+        <div className="w-[310px] h-[400px] my-7 mx-2">
+          <Card
+            logo={bitcoin}
+            title="Phase 1"
+            description={
+              <>
+                <ul className="list-disc list-outside">
+                  <li>Social media launch</li>
+                  <li>
+                    Website launch <br />
+                  </li>
+                  <li>
+                    2000 telegram members <br />
+                  </li>
+                  <li>
+                    Private sale <br />
+                  </li>
+                  <li>
+                    Presale <br />
+                  </li>
+                  <li>
+                    Earlier Markerting push <br />
+                  </li>
+                  <li>Starship-X born (pancake launch)</li>
+                </ul>
+              </>
+            }
+          />
+        </div>
+        <div className="w-[310px] h-[400px] my-7 mx-2">
+          <Card
+            logo={bitcoin}
+            title="Phase 2"
+            description={
+              <>
+                <ul className="list-disc list-outside">
+                  <li>Airdrop contest winners distribution</li>
+                  <li>Influncer markerting push</li>
+                  <li>Listing CMC</li>
+                  <li>Listing CG</li>
+                </ul>
+              </>
+            }
+          />
+        </div>
+        <div className="w-[310px] h-[400px] my-7 mx-2">
+          <Card
+            logo={bitcoin}
+            title="Phase 3"
+            description={
+              <>
+                <ul className="list-disc list-outside">
+                  <li>Telegram 10 k members </li>
+                  <li>Massive markerting push</li>
+                  <li>Dextool & Cmc trending</li>
+                  <li>10 MC</li>
+                </ul>
+              </>
+            }
+          />
+        </div>
+        <div className="w-[310px] h-[400px] my-7 mx-2">
+          <Card
+            logo={bitcoin}
+            title="Phase 4"
+            description={
+              <>
+                <ul className="list-disc list-outside">
+                  <li>Starship-X staking platform</li>
+                  <li>NFT Launch</li>
+                  <li>Certic Audit</li>
+                  <li>Massive Burn</li>
+                </ul>
+              </>
+            }
+          />
         </div>
       </div>
     </>
@@ -162,7 +240,7 @@ const Card = ({ logo, title, description }) => (
       <img src={logo} alt="logo" className="w-10 ml-3 mt-3" />
       <div className="text-white pt-14">
         <h5 className="mb-7 text-2xl capitalize">{title}</h5>
-        <p className="text-justify text-[13px]">{description}</p>
+        <p className=" text-[18px] ml-2">{description}</p>
       </div>
     </div>
   </>

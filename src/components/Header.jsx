@@ -1,5 +1,6 @@
 import React from "react";
-import { FaSun, FaFileCode } from "react-icons/fa";
+import { FaFileCode } from "react-icons/fa";
+import { HiMenu } from "react-icons/hi";
 import CV from "./images/ARasheedCV.pdf";
 import logo from "./images/logo.svg";
 
@@ -11,8 +12,7 @@ const Header = () => {
           <img src={logo} alt="logo" className="m-2" />
         </div>
         <div className="text-white uppercase font-semibold flex flex-wrap justify-center">
-          <span className="text-yellow-500">Abdur</span>&nbsp;
-          <span className="text-pink-600">Rasheed</span>
+          <span className="text-yellow-500">Starship-x</span>
         </div>
       </div>
       <div className="flex items-center">
@@ -20,11 +20,10 @@ const Header = () => {
         <a
           href={CV}
           download
-          className="md:px-5 px-2 py-1 rounded-3xl mx-2 md:bg-gradient-to-r from-yellow-500 to-rose-400 hover:bg-gradient-to-r hover:from-rose-400 hover:to-yellow-500 transition-all duration-300 ease-linear uppercase font-semibold flex items-center justify-center">
-          <span className="md:hidden">
-            <FaFileCode fontSize={23} className="my-1 text-yellow-500" />
+          className="md:px-5 px-2 py-1 rounded-3xl mx-2 bg-gradient-to-r from-yellow-500 to-pink-600 hover:bg-gradient-to-r hover:from-pink-600 hover:to-yellow-500 transition-all duration-300 ease-linear uppercase font-semibold flex items-center justify-center">
+          <span className="block">
+            <HiMenu fontSize={23} className="my-1 text-white" />
           </span>
-          <span className="md:block hidden">CV</span>
         </a>
       </div>
     </div>

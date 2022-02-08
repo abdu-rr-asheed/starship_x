@@ -10,6 +10,9 @@
 
 html {
   font-family: "Poppins", sans-serif;
+  /* background-image: url(./components/images/bg.jpg);
+  background-size: 100%;
+  background-repeat: repeat-y; */
 }
 .code {
   font-family: "Source Code Pro", monospace;

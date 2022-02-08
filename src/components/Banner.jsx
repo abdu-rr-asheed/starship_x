@@ -1,17 +1,10 @@
 import React from "react";
 import Particles from "react-tsparticles";
 import Typewriter from "typewriter-effect";
-import {
-  html,
-  css,
-  js,
-  reactimg,
-  sanity,
-  wordpress,
-  figma,
-  tailwind,
-  balls,
-} from "./";
+import logo from "./images/logo.svg";
+import { bitcoin, avalanche, binance, ethereum, iota, monero, shiba } from "./";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { BsTelegram, BsFacebook, BsReddit } from "react-icons/bs";
 
 const Banner = () => {
   return (
@@ -19,48 +12,69 @@ const Banner = () => {
       className="relative flex justify-around items-center lg:flex-row md:flex-col flex-wrap code w-full"
       id="hero">
       <div className="text-white md:pl-24 pl-4 my-10 md:my-0 lg:w-1/2 w-full">
-        <div className="opacity-40">&lt;body&gt;</div>
-        <div className="opacity-40">&emsp;&lt;whoami&gt;</div>
-        <div className="md:text-6xl text-5xl font-bold code-font my-2 md:ml-12 bg bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-600">
-          Hi,
-          <br />
-          I'm, RASHEED
+        <div className="md:text-6xl text-5xl md:text-left text-center font-bold code-font my-6 md:ml-12 bg bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-600">
+          STARSHIP - X
         </div>
-        <div className="opacity-40">&emsp;&lt;&#47;whoami&gt;</div>
-        <div className="opacity-40">&emsp;&lt;profession&gt;</div>
-        <div className="md:text-6xl text-5xl font-bold code-font my-2 md:ml-12 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-600">
-          Web Developer
+        <div className="text-xl font-bold md:text-justify text-center code-font my-2 md:ml-12 text-pink-600">
+          $ STARSHIP (SS) is a hyper-deflationary token on the Binance Smart
+          Chain that provides unparalleled investing opportunities and an
+          unprecedented use case that actually makes a difference in this world!
         </div>
-        <div className="opacity-40">&emsp;&lt;&#47;profession&gt;</div>
-        <div className="opacity-40">&emsp;&lt;aboutme&gt;</div>
-        <div className="text-2xl text-slate-300 code-font my-2 md:ml-12">
+        <div className="text-base text-slate-300 md:text-justify text-center code-font my-2 md:ml-12">
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-                .typeString("Front-end Developer | UI/UX Designer")
+                .typeString(
+                  "The STARSHIP Token contract is verified and 100% of LP tokens have been locked. This means that no one can ever access the liquidity pool."
+                )
                 .changeDelay(5000)
                 .pauseFor(2500)
                 .start();
             }}
           />
         </div>
-        <div className="opacity-40">&emsp;&lt;&#47;aboutme&gt;</div>
-        <div className="opacity-40">&lt;&#47;body&gt;</div>
+        <div className="flex md:justify-start justify-center items-center my-4 md:ml-12">
+          <a
+            href="https://www.facebook.com/abdur.rasheed.12720/"
+            target="_blank"
+            className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out delay-100 duration-100 hover:-translate-y-1 hover:scale-110">
+            <AiFillTwitterCircle fontSize={20} />
+          </a>
+          <a
+            href="https://github.com/abdu-rr-asheed"
+            target="_blank"
+            className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out duration-100 hover:-translate-y-1 hover:scale-110">
+            <BsFacebook fontSize={20} />
+          </a>
+          <a
+            href="https://stackoverflow.com/users/14837324/abdur-rasheed"
+            target="_blank"
+            className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out delay-100 duration-100 hover:-translate-y-1 hover:scale-110">
+            <BsTelegram fontSize={20} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/abdur-rasheed-430/"
+            target="_blank"
+            className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out delay-100 duration-100 hover:-translate-y-1 hover:scale-110">
+            <BsReddit fontSize={20} />
+          </a>
+        </div>
       </div>
-      <div className="relative h-[500px] my-10 md:my-0 lg:w-1/2 w-full">
-        <iframe
+      <div className="relative h-[500px] my-10 md:my-0 lg:w-1/2 w-full flex justify-center items-center">
+        {/* <iframe
           src="https://my.spline.design/charactor-389faed3c836ddc49c274b15d22eba47/"
           frameBorder="0"
           width="100%"
           height="100%"></iframe>
         <div className="absolute bottom-[10px] right-[10px] rounded-full w-10 h-10 bg-gray-900"></div>
-        <div className="absolute top-0 left-0 w-full h-full bg-transparent md:hidden"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-transparent md:hidden"></div> */}
+        <img src={logo} alt="" width="400px" />
       </div>
-      <img
+      {/* <img
         src={balls}
         alt="ball"
         className="absolute md:left-0 md:bottom-10 right-0 w-48 -z-10 opacity-40"
-      />
+      /> */}
       <Particles
         id="tsparticles"
         options={{
@@ -191,42 +205,37 @@ const Banner = () => {
               },
               image: [
                 {
-                  src: html,
+                  src: bitcoin,
                   width: 20,
                   height: 20,
                 },
                 {
-                  src: css,
+                  src: binance,
                   width: 20,
                   height: 20,
                 },
                 {
-                  src: figma,
+                  src: avalanche,
                   width: 20,
                   height: 20,
                 },
                 {
-                  src: js,
+                  src: ethereum,
                   width: 20,
                   height: 20,
                 },
                 {
-                  src: reactimg,
+                  src: iota,
                   width: 20,
                   height: 20,
                 },
                 {
-                  src: sanity,
+                  src: monero,
                   width: 20,
                   height: 20,
                 },
                 {
-                  src: tailwind,
-                  width: 20,
-                  height: 20,
-                },
-                {
-                  src: wordpress,
+                  src: shiba,
                   width: 20,
                   height: 20,
                 },

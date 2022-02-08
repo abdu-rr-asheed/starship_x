@@ -9,6 +9,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import Sidebar from "./components/Sidebar";
 import Skills from "./components/Skills";
 import Slider from "./components/Slider";
+import TokenDistribution from "./components/TokenDistribution";
+import Video from "./components/Video";
 
 function App() {
   const aboutmesection = useRef(null);
@@ -16,7 +18,8 @@ function App() {
   const skillssection = useRef(null);
   const contactsection = useRef(null);
   return (
-    <div className="flex flex-col justify-center lg:max-w-[1356px] w-full p-2 md:p-0">
+    <div className="relative flex flex-col justify-center lg:max-w-[1356px] w-full p-2 md:p-0">
+      <Video />
       <Sidebar
         aboutme={aboutmesection}
         portfolio={portfoliosection}
@@ -26,6 +29,7 @@ function App() {
       <Header />
       <Banner />
       <Aboutme scrl={aboutmesection} />
+      <TokenDistribution />
       <Slider scrl={portfoliosection} />
       <Skills scrl={skillssection} />
       <Contact scrl={contactsection} />
