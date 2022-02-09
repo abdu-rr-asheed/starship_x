@@ -244,7 +244,7 @@ const Card = ({ logo, title, description }) => (
       <img src={logo} alt="logo" className="w-10 ml-3 mt-3" />
       <div className="text-white pt-14">
         <h5 className="mb-7 text-2xl capitalize">{title}</h5>
-        <p className=" text-[18px] ml-2">{description}</p>
+        <div className=" text-[18px] ml-2">{description}</div>
       </div>
     </div>
   </>
