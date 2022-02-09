@@ -6,7 +6,6 @@ import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HowToBuy from "./components/HowToBuy";
-import Lunch from "./components/lunch";
 import ScrollToTop from "./components/ScrollToTop";
 import Sidebar from "./components/Sidebar";
 import Skills from "./components/Skills";
