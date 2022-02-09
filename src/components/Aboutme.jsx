@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  bitcoin,
+  binance,
   css,
   js,
   reactimg,
@@ -27,7 +27,7 @@ export const Aboutme = ({ scrl }) => {
           height="100%"></iframe>
         <div className="absolute bottom-[10px] right-[10px] rounded-full w-10 h-10 bg-gray-900"></div>
         <div className="absolute top-0 left-0 w-full h-full bg-transparent md:hidden"></div> */}
-            <img src={bitcoin} alt="" width="400px" />
+            <img src={binance} alt="" width="400px" />
           </div>
           {/* <div className="flex justify-center items-center my-4">
             <a

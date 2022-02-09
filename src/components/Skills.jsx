@@ -31,11 +31,15 @@ import Heading from "./Heading";
 // install Swiper modules
 SwiperCore.use([EffectCards]);
 
-const Skills = ({ scrl }) => {
+const Skills = () => {
   return (
-    <>
-      <Heading title="Road Map" scrl={scrl} />
-      <div className="flex justify-around items-center flex-wrap overflow-x-hidden">
+    <div className="flex justify-center items-center flex-col">
+      <div className="text-white text-center">
+        <div className="md:text-6xl text-5xl text-yellow-500 code-font my-12 font-bold">
+          Road Map
+        </div>
+      </div>
+      <div className="flex justify-around items-center flex-wrap">
         {/* <div className="w-[310px] h-[400px] my-7 mx-2">
           <Swiper
             effect={"cards"}
@@ -228,7 +232,7 @@ const Skills = ({ scrl }) => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

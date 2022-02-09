@@ -10,9 +10,9 @@
 
 html {
   font-family: "Poppins", sans-serif;
-  /* background-image: url(./components/images/bg.jpg);
+  background-image: url(./components/images/bg.jpg);
   background-size: 100%;
-  background-repeat: repeat-y; */
+  background-repeat: repeat-y;
 }
 .code {
   font-family: "Source Code Pro", monospace;
@@ -55,7 +55,7 @@ html {
     @apply flex justify-center;
   }
   body {
-    @apply relative text-sm text-black bg-gray-900 m-0 p-0 flex justify-center flex-col;
+    @apply relative text-sm text-black m-0 p-0 flex justify-center flex-col;
   }
   .sidebar-icon {
     @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-gray-700 text-yellow-500 hover:bg-yellow-600 hover:text-white rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer;

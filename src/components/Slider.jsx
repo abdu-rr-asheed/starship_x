@@ -36,11 +36,11 @@ import Heading from "./Heading";
 // install Swiper modules
 SwiperCore.use([Autoplay, Pagination]);
 
-const Slider = ({ scrl }) => {
+const Slider = () => {
   return (
     <>
       <Heading title="Portfolio" />
-      <div className="w-full" id="portfolio" ref={scrl}>
+      <div className="w-full" id="portfolio">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}

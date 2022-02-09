@@ -1,7 +1,7 @@
 import React from "react";
 import Particles from "react-tsparticles";
 import Typewriter from "typewriter-effect";
-import logo from "./images/logo.svg";
+import logo from "./images/logo.jpg";
 import { bitcoin, avalanche, binance, ethereum, iota, monero, shiba } from "./";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { BsTelegram, BsFacebook, BsReddit } from "react-icons/bs";
