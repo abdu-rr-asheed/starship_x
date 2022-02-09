@@ -16,7 +16,7 @@ const Banner = () => {
           STARSHIP - X
         </div>
         <div className="text-xl font-bold md:text-justify text-center code-font my-2 md:ml-12 text-pink-600">
-          $ STARSHIP (SS) is a hyper-deflationary token on the Binance Smart
+          $ STARSHIP-X (SS) is a hyper-deflationary token on the Binance Smart
           Chain that provides unparalleled investing opportunities and an
           unprecedented use case that actually makes a difference in this world!
         </div>
@@ -25,7 +25,7 @@ const Banner = () => {
             onInit={(typewriter) => {
               typewriter
                 .typeString(
-                  "The STARSHIP Token contract is verified and 100% of LP tokens have been locked. This means that no one can ever access the liquidity pool."
+                  "The STARSHIP-X Token contract is verified and 100% of LP tokens have been locked. This means that no one can ever access the liquidity pool."
                 )
                 .changeDelay(5000)
                 .pauseFor(2500)
@@ -35,13 +35,13 @@ const Banner = () => {
         </div>
         <div className="flex md:justify-start justify-center items-center my-4 md:ml-12">
           <a
-            href="https://www.facebook.com/abdur.rasheed.12720/"
+            href="https://twitter.com/starshipxbsc?t=QthdOPriEKtXCoq-V5eoEg&s=09"
             target="_blank"
             className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out delay-100 duration-100 hover:-translate-y-1 hover:scale-110">
             <AiFillTwitterCircle fontSize={20} />
           </a>
           <a
-            href="https://github.com/abdu-rr-asheed"
+            href="https://www.facebook.com/profile.php?id=100078049712953"
             target="_blank"
             className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out duration-100 hover:-translate-y-1 hover:scale-110">
             <BsFacebook fontSize={20} />
@@ -53,7 +53,7 @@ const Banner = () => {
             <BsTelegram fontSize={20} />
           </a>
           <a
-            href="https://www.linkedin.com/in/abdur-rasheed-430/"
+            href="https://www.reddit.com/u/starshipxbsc?utm_medium=android_app&utm_source=share"
             target="_blank"
             className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out delay-100 duration-100 hover:-translate-y-1 hover:scale-110">
             <BsReddit fontSize={20} />

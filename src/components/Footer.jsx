@@ -22,13 +22,13 @@ const Footer = () => {
       </h2>
       <div className="flex justify-center items-center my-4">
         <a
-          href="https://www.facebook.com/abdur.rasheed.12720/"
+          href="https://twitter.com/starshipxbsc?t=QthdOPriEKtXCoq-V5eoEg&s=09"
           target="_blank"
           className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out delay-100 duration-100 hover:-translate-y-1 hover:scale-110">
           <AiFillTwitterCircle fontSize={20} />
         </a>
         <a
-          href="https://github.com/abdu-rr-asheed"
+          href="https://www.facebook.com/profile.php?id=100078049712953"
           target="_blank"
           className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out duration-100 hover:-translate-y-1 hover:scale-110">
           <BsFacebook fontSize={20} />
@@ -40,7 +40,7 @@ const Footer = () => {
           <BsTelegram fontSize={20} />
         </a>
         <a
-          href="https://www.linkedin.com/in/abdur-rasheed-430/"
+          href="https://www.reddit.com/u/starshipxbsc?utm_medium=android_app&utm_source=share"
           target="_blank"
           className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out delay-100 duration-100 hover:-translate-y-1 hover:scale-110">
           <BsReddit fontSize={20} />

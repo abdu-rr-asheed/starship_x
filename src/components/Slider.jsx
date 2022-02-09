@@ -2,28 +2,7 @@ import React from "react";
 
 import { ImNewTab } from "react-icons/im";
 
-import {
-  html,
-  css,
-  js,
-  reactimg,
-  sanity,
-  wordpress,
-  figma,
-  tailwind,
-  lonmrtimg,
-  lonmrtlogo,
-  sharemeimg,
-  sharemelogo,
-  xmobileimg,
-  xmobilelogo,
-  foodcoimg,
-  foodcologo,
-  phloximg,
-  phloxlogo,
-  rscimg,
-  rsclogo,
-} from "./";
+import { burn } from "./";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -45,74 +24,21 @@ const Slider = () => {
           spaceBetween={30}
           centeredSlides={true}
           // direction={"vertical"}
-          loop={true}
-          autoplay={{
-            delay: 4000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 4000,
+          //   disableOnInteraction: false,
+          // }}
           pagination={{
             type: "fraction",
           }}>
           <SwiperSlide>
             <Portfolio
-              portImg={sharemeimg}
+              portImg={burn}
               imgColor="#2c353d"
-              portLogo={sharemelogo}
-              progLang={[reactimg, sanity, tailwind]}
+              // portLogo={sharemelogo}
+              // progLang={[reactimg, sanity, tailwind]}
               siteLink="https://rasheedshareme.netlify.app/"
               description="This Web application Full Stack Social Media Application. build with React, Tailwind and Sanity.Login with Google-Auth ,Upload image, Delete image, Save image, Download image, Comment by User. Admin can manage the Backend."
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Portfolio
-              portImg={lonmrtimg}
-              imgColor="#c5302e"
-              portLogo={lonmrtlogo}
-              progLang={[html, css, js]}
-              figmaLink="https://www.figma.com/proto/PwdhraYAPexkAjJm3ueIK0/LondonMart?page-id=0%3A1&node-id=2%3A2&scaling=scale-down-width"
-              siteLink="https://abdu-rr-asheed.github.io/londonMart/"
-              description="This site is E-Commerce Site. I Designed Front-end for the site. build with HTML, CSS and JavaScript. I design UI/UX for the site. Deferent Sliders , Gallery page, Product View Page and Category page.My First complete website I have created"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Portfolio
-              portImg={xmobileimg}
-              imgColor="#044e81"
-              portLogo={xmobilelogo}
-              progLang={[html, css, js]}
-              figmaLink="https://www.figma.com/proto/I62oGu2dE9YykIuQx5T5aC/X-Mobile-Mockup?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.05&scaling=scale-down-width"
-              siteLink="https://abdu-rr-asheed.github.io/xmobile/"
-              description="This is Electronic E-Commerce site.build with HTML, CSS, JavaScript.I Designed Front-end part and UI/UX. In site Hero Sliders , offer Countdown , Compare page , filleter ,Product page and 360 product View. "
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Portfolio
-              portImg={rscimg}
-              imgColor="#313946"
-              portLogo={rsclogo}
-              progLang={[html, css, js]}
-              figmaLink="https://www.figma.com/proto/Vhy5kUFRdjNqcyVLZ6iXn5/RSC-Design?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.04&scaling=scale-down-width&starting-point-node-id=1%3A2"
-              siteLink="https://abdu-rr-asheed.github.io/royalSC/"
-              description="This is a Campus website.build with HTML ,CSS and JavaScript.I Designed Front-end part and UI/UX."
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Portfolio
-              portImg={phloximg}
-              imgColor="#284f47"
-              portLogo={phloxlogo}
-              progLang={[wordpress]}
-              siteLink="http://ecommercewordpress.epizy.com/"
-              description="This is E-Commerce site.build with Wordpress, woo-commerce and elementor. This site build with my own for the study purpose"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Portfolio
-              portImg={foodcoimg}
-              imgColor="#777a4b"
-              portLogo={foodcologo}
-              figmaLink="https://www.figma.com/proto/xr2lsCfD7pHD0ajTIAgaOQ/Foodco?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.09&scaling=scale-down-width"
-              description="This is static Food site. I have design UI/UX"
             />
           </SwiperSlide>
         </Swiper>
@@ -133,54 +59,30 @@ const Portfolio = ({
   description,
 }) => (
   <div className="w-full grid place-items-center md:mt-20 my-16">
-    <div className="relative md:w-9/12 w-11/12">
+    <div className="relative md:w-9/12 w-11/12  md:h-full h-[340px]  rounded-md overflow-hidden">
       <img
         src={portImg}
         alt="londonMartImage"
-        className="w-full object-cover rounded-md"
-        style={{ background: `${imgColor}` }}
+        className="w-full object-cover h-full"
       />
-      <img
-        src={portLogo}
-        alt="LondonMartLogo"
-        className="w-3/12 absolute md:-left-[120px] md:-top-[100px] left-0 -top-10"
-      />
-      <div className="absolute bottom-0 left-0 w-fit h-fit flex justify-center items-center p-[1px] bg-gray-900 bg-opacity-50 rounded-md m-1">
-        {progLang &&
-          progLang.map((item, idx) => (
-            <img
-              src={item}
-              alt="icon"
-              key={idx}
-              className="md:w-[24px] w-[18px] m-2"
-            />
-          ))}
-      </div>
-      {figmaLink && (
-        <div className="absolute bottom-0 right-0 w-fit h-fit flex justify-center items-center p-[1px] bg-gray-900 rounded-md m-1">
-          <a href={figmaLink} target="_blank">
-            <img src={figma} alt="" className="md:w-[22px] w-[20px] m-2" />
-          </a>
+      <div className="absolute top-0 left-0 w-full h-full bg-gray-900 opacity-75"></div>
+      <div className="md:px-16 px-5 py-10 absolute md:top-20 top-0 left-0 text-white flex justify-center items-center flex-col text-center">
+        <h1 className="text-yellow-500 md:text-6xl text-2xl font-bold">
+          The birth of Starship-X
+        </h1>
+        <p className="text-xl md:text-3xl my-3">
+          The World best Hyper deflationary Community coin
+        </p>
+        <div className="flex flex-col text-left text-yellow-500 font-bold text-base my-2 md:text-3xl">
+          <p>50 % coins already burned</p>
+          <p>5% Reflection to holders</p>
         </div>
-      )}
-      {siteLink && (
-        <a
-          href={siteLink}
-          target="_blank"
-          className="text-white absolute md:bottom-16 md:-right-16 right-0 top-0 md:top-auto flex items-center text-xl tracking-widest"
-          style={{ textShadow: "3px 3px 5px #000000" }}>
-          <span className="hidden md:inline">View site</span>
-          <span className="md:p-0 p-1 rounded-md md:bg-transparent bg-black md:m-0 m-1">
-            <ImNewTab
-              fontSize={24}
-              className="ml-2 shadow-2xl m-1 text-white"
-            />
-          </span>
-        </a>
-      )}
+        <p className="text-justify my-2 md:text-3xl text-sm">
+          We have burned 50+of the supply .that mean out of the 5%
+          redistribution 50% it will be distributed to the dead wallet each
+          transaction 2.5% coins are burnt with every transactions
+        </p>
+      </div>
     </div>
-    <p className="md:w-9/12 w-11/12 text-white text-base md:text-left text-center mt-4">
-      {description}
-    </p>
   </div>
 );

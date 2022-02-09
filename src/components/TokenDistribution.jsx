@@ -6,7 +6,7 @@ import CountUp from "react-countup";
 ChartJS.register(ArcElement, Tooltip, Legend);
 export const data = {
   labels: [
-    "Auto Burn",
+    "All ready Burn",
     "Private Sale",
     "Pre Sale",
     "Giveaway (Dev)",
@@ -16,7 +16,7 @@ export const data = {
   datasets: [
     {
       label: "# of Votes",
-      data: [30.0, 10.6, 30.0, 4.9, 0.5, 24.0],
+      data: [50, 7.5, 20.4, 5.3, 0.5, 16.3],
       backgroundColor: [
         "rgba(252, 9, 145, 1)",
         "#95CD41",
@@ -40,13 +40,10 @@ export const data = {
 
 const TokenDistribution = () => {
   return (
-    <div className="m-4 flex justify-center items-center flex-wrap flex-col">
-      <div className="flex justify-center items-center flex-col  my-10 md:my-0 relative w-full md:h-screen">
-        {/* <img src={logo} alt="" width="400px" /> */}
-        <div className="text-white">
-          <div className="md:text-6xl text-5xl text-yellow-500 code-font my-2 font-bold">
-            Tokenomics
-          </div>
+    <div className="md:m-4 flex justify-center items-center flex-wrap flex-col">
+      <div className="flex justify-center items-center flex-col my-10 md:my-0 relative w-full md:h-screen">
+        <div className="md:text-6xl text-5xl text-yellow-500 code-font my-2 font-bold">
+          Tokenomics
         </div>
         <h2 className="text-white font-bold md:text-7xl text-4xl my-3">
           <CountUp end={1000000000} delay={0} />
@@ -59,12 +56,12 @@ const TokenDistribution = () => {
       </div>
       <div className="flex justify-center items-center flex-col  my-10 md:my-0 relative w-full h-screen">
         {/* <img src={logo} alt="" width="400px" /> */}
-        <div className="md:text-8xl text-6xl text-center text-yellow-500 code-font my-2 font-bold">
+        <div className="md:text-8xl text-5xl text-center text-yellow-500 code-font my-2 font-bold">
           $Starship-X Taxation
         </div>
-        <div className="text-white text-center md:text-7xl text-4xl my-3 m-auto">
+        <div className="text-white text-center md:text-7xl text-4xl my-3 flex flex-col justify-center items-center">
           <CountUp end={11} delay={0} className="font-bold" />%
-          <p className="text-yellow-500 font-bold text-5xl my-3">
+          <p className="text-yellow-500 font-bold text-3xl my-3">
             Buy & Sell Taxes Distribution
           </p>
           <div className="flex justify-center items-center flex-col">
@@ -74,7 +71,7 @@ const TokenDistribution = () => {
               <p className="text-white text-4xl my-3">4% Marketing</p>
             </div>
           </div>
-          <p className="text-white text-xl my-3 md:w-7/12 m-auto mt-7">
+          <p className="text-white text-sm my-3 md:w-7/12 mt-7">
             At the heart of every great crypto project are its 'tokenomics'.
             This basically communicates how much and where the transactional
             fees are distributed on any buy, sell or transfer of the token. Our
