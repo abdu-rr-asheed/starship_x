@@ -1,7 +1,7 @@
 import React from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
-import CountUp from "react-countup";
+// import CountUp from "react-countup";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 export const data = {
@@ -46,7 +46,8 @@ const TokenDistribution = () => {
           Tokenomics
         </div>
         <h2 className="text-white font-bold md:text-7xl text-4xl my-3">
-          <CountUp end={1000000000} delay={0} />
+          {/* <CountUp end={1000000000} delay={0} /> */}
+          1,000,000,000
         </h2>
         <p className="text-yellow-500 font-bold text-3xl my-3">
           {" "}
@@ -60,7 +61,7 @@ const TokenDistribution = () => {
           $Starship-X Taxation
         </div>
         <div className="text-white text-center md:text-7xl text-4xl my-3 flex flex-col justify-center items-center">
-          <CountUp end={11} delay={0} className="font-bold" />%
+          11%
           <p className="text-yellow-500 font-bold text-3xl my-3">
             Buy & Sell Taxes Distribution
           </p>
