@@ -2,7 +2,7 @@ import React from "react";
 import { FaFileCode } from "react-icons/fa";
 import { HiMenu } from "react-icons/hi";
 import CV from "./images/ARasheedCV.pdf";
-import logo from "./images/logo.svg";
+import logo from "./images/logo.png";
 
 const Header = () => {
   return (

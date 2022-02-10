@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./images/logo.svg";
+import logo from "./images/logo.png";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { BsTelegram, BsFacebook, BsReddit } from "react-icons/bs";
@@ -34,7 +34,7 @@ const Footer = () => {
           <BsFacebook fontSize={20} />
         </a>
         <a
-          href="https://stackoverflow.com/users/14837324/abdur-rasheed"
+          href="https://t.me/starshipxbsctoken"
           target="_blank"
           className="w-10 h-10 flex justify-center items-center bg-gradient-to-r from-yellow-500 to-pink-600  rounded-full m-2 transition ease-in-out delay-100 duration-100 hover:-translate-y-1 hover:scale-110">
           <BsTelegram fontSize={20} />
