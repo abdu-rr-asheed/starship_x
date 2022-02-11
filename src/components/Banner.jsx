@@ -61,20 +61,8 @@ const Banner = () => {
         </div>
       </div>
       <div className="relative h-[500px] my-10 md:my-0 lg:w-1/2 w-full flex justify-center items-center">
-        {/* <iframe
-          src="https://my.spline.design/charactor-389faed3c836ddc49c274b15d22eba47/"
-          frameBorder="0"
-          width="100%"
-          height="100%"></iframe>
-        <div className="absolute bottom-[10px] right-[10px] rounded-full w-10 h-10 bg-gray-900"></div>
-        <div className="absolute top-0 left-0 w-full h-full bg-transparent md:hidden"></div> */}
         <img src={logo} alt="" width="400px" />
       </div>
-      {/* <img
-        src={balls}
-        alt="ball"
-        className="absolute md:left-0 md:bottom-10 right-0 w-48 -z-10 opacity-40"
-      /> */}
       <Particles
         id="tsparticles"
         options={{

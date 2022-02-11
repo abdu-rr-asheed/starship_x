@@ -1,10 +1,7 @@
 import React from "react";
 import logo from "./images/logo.png";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { BsTelegram, BsFacebook, BsReddit } from "react-icons/bs";
-
-import { reactimg, tailwind } from "./";
 
 const Footer = () => {
   return (

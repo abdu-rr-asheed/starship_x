@@ -1,6 +1,6 @@
 import React from "react";
 import { GiEarthAmerica, GiSkills } from "react-icons/gi";
-import { FaFingerprint, FaBriefcase, FaFileCode } from "react-icons/fa";
+import { FaFingerprint, FaBriefcase } from "react-icons/fa";
 
 const Sidebar = ({ aboutme, portfolio, skills, contact }) => {
   const gotoaboutme = () =>

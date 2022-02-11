@@ -1,7 +1,5 @@
 import React from "react";
 
-import { ImNewTab } from "react-icons/im";
-
 import { burn } from "./";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -23,11 +21,6 @@ const Slider = () => {
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
-          // direction={"vertical"}
-          // autoplay={{
-          //   delay: 4000,
-          //   disableOnInteraction: false,
-          // }}
           pagination={{
             type: "fraction",
           }}>
@@ -35,8 +28,6 @@ const Slider = () => {
             <Portfolio
               portImg={burn}
               imgColor="#2c353d"
-              // portLogo={sharemelogo}
-              // progLang={[reactimg, sanity, tailwind]}
               siteLink="https://rasheedshareme.netlify.app/"
               description="This Web application Full Stack Social Media Application. build with React, Tailwind and Sanity.Login with Google-Auth ,Upload image, Delete image, Save image, Download image, Comment by User. Admin can manage the Backend."
             />
@@ -49,15 +40,7 @@ const Slider = () => {
 
 export default Slider;
 
-const Portfolio = ({
-  portImg,
-  imgColor,
-  portLogo,
-  progLang,
-  figmaLink,
-  siteLink,
-  description,
-}) => (
+const Portfolio = ({ portImg }) => (
   <div className="w-full grid place-items-center md:mt-20 my-16">
     <div className="relative md:w-9/12 w-11/12  md:h-full h-[340px]  rounded-md overflow-hidden">
       <img
@@ -66,7 +49,7 @@ const Portfolio = ({
         className="w-full object-cover h-full"
       />
       <div className="absolute top-0 left-0 w-full h-full bg-gray-900 opacity-75"></div>
-      <div className="md:px-16 px-5 py-10 absolute md:top-20 top-0 left-0 text-white flex justify-center items-center flex-col text-center">
+      <div className="md:px-16 px-5 py-10 absolute w-full h-full top-0 left-0 text-white flex justify-center items-center flex-col text-center">
         <h1 className="text-yellow-500 md:text-6xl text-2xl font-bold">
           The birth of Starship-X
         </h1>
