@@ -10,3 +10,4 @@ export { default as wallat } from "./images/wallat.svg";
 export { default as rabbit } from "./images/rabbit.svg";
 export { default as updown } from "./images/updown.svg";
 export { default as burn } from "./images/burn.jpg";
+export { default as privetesale } from "./images/privetesale.svg";

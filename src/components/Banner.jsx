@@ -9,7 +9,7 @@ import { BsTelegram, BsFacebook, BsReddit } from "react-icons/bs";
 const Banner = () => {
   return (
     <div
-      className="relative flex justify-around items-center lg:flex-row md:flex-col flex-wrap code w-full md:h-[80vh]"
+      className="relative flex justify-around items-center lg:flex-row md:flex-col flex-wrap code w-full md:h-[70vh]"
       id="hero">
       <div className="text-white md:pl-24 pl-4 my-10 md:my-0 lg:w-1/2 w-full">
         <div className="md:text-6xl text-5xl md:text-left text-center font-bold code-font my-6 md:ml-12 bg bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-600">
